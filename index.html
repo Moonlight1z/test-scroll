@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .authors {
+            margin: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .authors-favorite {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .authors-card {
+            display: flex;
+            gap: 10px;
+        }
+
+        .author {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            background-color: #FBF1BA;
+            overflow-wrap: break-word;
+            border: 2px solid #FBF1BA;
+            transition: 0.5s linear;
+        }
+
+        .author:hover {
+            border: 2px solid #000;
+        }
+
+        .author .author__name {
+            position: relative;
+        }
+
+        .author .author__name::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #000000;
+            top: 40px;
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+
+        .author .author__name:hover::before {
+            top: 30px;
+            opacity: 1;
+        }
+
+        .author .author__table {
+            padding: 5px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            .author {
+                transition: none;
+            }
+
+            .author:hover {
+                border: 2px solid #FBF1BA;
+            }
+
+            .author .author__name::before {
+                display: none;
+            }
+
+            .author .author__name:hover::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="authors">
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+        <a href="#" class="author">
+            <p class="author__name">Автор</p>
+            <p class="author__table">87</p>
+        </a>
+    </div>
+</body>
+
+</html>
